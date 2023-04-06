@@ -18,9 +18,46 @@ const questions = [
     },
 
     {
+        type: 'input',
+        name: 'installation',
+        message: 'Are there any installation instructions you would like to provide',
+    },
+
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'What is the usaged of the application going to be',
+    },
+
+    {
+        type: 'input',
+        name: 'contributors',
+        message: 'Are there any contributors that you would like to include?',
+    },
+
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'Are there any specific testing instructions that you would like to include?',
+    },
+
+    {
         type: 'list',
-        name: '',
-        message: '',
+        name: 'license',
+        message: 'Which license would you like to choose?',
+        choices: [
+            'MIT License',
+            'Mozilla Public License 2.0',
+            'Creative Commons Zero v1.0 Universal',
+            'GNU General Public License',
+            'No License'
+        ]
+    },
+
+    {
+        type: 'input',
+        name: 'username',
+        message: 'Please provide your github username.',
     },
 
     {
